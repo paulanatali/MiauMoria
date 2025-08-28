@@ -86,3 +86,11 @@ body {
 main{
     font-family: cursive;
 }
+.contato{
+    background-color:#f08080;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
