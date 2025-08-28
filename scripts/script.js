@@ -102,3 +102,5 @@
     restartBtn.addEventListener('click', startGame);
     startGame();
   
+
+   

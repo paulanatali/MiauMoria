@@ -20,3 +20,4 @@
     .hidden{visibility:hidden}
 
     @media (max-width:520px){.grid{grid-template-columns:repeat(3,1fr)}.card{height:90px}.face{font-size:30px}}
+
