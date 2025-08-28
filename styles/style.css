@@ -1,0 +1,23 @@
+
+    :root{--bg:#87CEFA;--card:#20B2AA;--back:#20B2AA;--gap:12px;--btn:#DC143C}
+    *{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,Arial}
+    body{margin:0;min-height:100vh;background:var(--bg);display:flex;align-items:center;justify-content:center;color:#042024}
+    .wrap{width:min(880px,95vw);padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+    h1{font-size:20px;margin:0}
+    .controls{display:flex;gap:8px;align-items:center}
+    button{background:var(--btn);border:0;padding:8px 12px;border-radius:8px;cursor:pointer;color:#042024;font-weight:600}
+    .stats{font-size:14px;opacity:.9}
+
+    .grid{display:grid;gap:var(--gap);grid-template-columns:repeat(4,1fr)}
+    .card{perspective:800px;height:110px;position:relative}
+    .inner{position:absolute;inset:0;border-radius:10px;transition:transform .45s;transform-style:preserve-3d;cursor:pointer}
+    .card.flipped .inner{transform:rotateY(180deg)}
+    .face{position:absolute;inset:0;backface-visibility:hidden;display:flex;align-items:center;justify-content:center;font-size:40px; background: var(--card); border-radius: 10px;}
+    .front{transform:rotateY(180deg);}
+    .back{border:2px solid rgba(255,255,255,0.3);}
+
+    .hidden{visibility:hidden}
+
+    @media (max-width:520px){.grid{grid-template-columns:repeat(3,1fr)}.card{height:90px}.face{font-size:30px}}
+

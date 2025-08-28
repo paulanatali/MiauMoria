@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.accordion-button {
+    font-weight: bold;
+}
+
+.text-light {
+    text-decoration: none;
+}
+
+.card {
+    border-radius: 12px;
+    border: none;
+}
+
+.desenvolvedoras {
+    border-radius: 2%;
+    background-color: #87CEFA;
+    color: rgb(252, 252, 252);
+    font-family: cursive;
+}
+
+.cartas {
+    width: 100px;
+    height: 100px;
+    background-color: #20B2AA;
+    /* cor do card */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.carta-virada {
+    width: 100px;
+    height: 100px;
+    background-color: #fefefe;
+    /* cor do card */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.border {
+    border-radius: 7%;
+}
+
+.sobre {
+    background-color: #8fcefa;
+    margin: 4%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
