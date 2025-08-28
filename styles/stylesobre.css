@@ -27,9 +27,6 @@ body {
 }
 
 .desenvolvedoras {
-    border-radius: 2%;
-    background-color: #87CEFA;
-    color: rgb(252, 252, 252);
     font-family: cursive;
 }
 
@@ -73,4 +70,19 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+.btn{
+    background-color:  #20B2AA;
+    color: #fefefe;
+    font-family: cursive;
+}
+.navbar{
+    background-color: #87CEFA;
+}
+.logos{
+    font-family: cursive;
+    color: #fefefe;
+}
+main{
+    font-family: cursive;
 }
