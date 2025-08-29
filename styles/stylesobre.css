@@ -34,7 +34,6 @@ body {
     width: 100px;
     height: 100px;
     background-color: #20B2AA;
-    /* cor do card */
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -48,7 +47,6 @@ body {
     width: 100px;
     height: 100px;
     background-color: #fefefe;
-    /* cor do card */
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -87,10 +85,11 @@ main{
     font-family: cursive;
 }
 .contato{
-    background-color:#f08080;
+    
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
 }
