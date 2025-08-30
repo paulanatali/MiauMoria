@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Montserrat", sans-serif;;
+    
 }
 
 .nav-item {
@@ -60,29 +61,22 @@ body {
     border-radius: 7%;
 }
 
-.sobre {
-    background-color: #8fcefa;
-    margin: 4%;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
+
 .btn{
     background-color:  #20B2AA;
     color: #fefefe;
-    font-family: cursive;
+    font-family: 'Roboto Mono', monospace;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    
 }
 .navbar{
     background-color: #87CEFA;
 }
-.logos{
-    font-family: cursive;
-    color: #fefefe;
-}
+
 main{
-    font-family: cursive;
+    font-family: 'Roboto Mono', monospace;
 }
 .contato{
     
@@ -93,3 +87,92 @@ main{
     cursor: pointer;
 
 }
+.btn2{
+    background-color:  #c6ddef;
+    color: #000000;
+  font-family: 'Roboto Mono', monospace;
+}
+a {
+  text-decoration: none;
+}
+.pixel {
+  font-family: "Press Start 2P", cursive;
+}
+.pixel-blue{
+     font-family: "Press Start 2P", cursive;
+     color: #0e6fab;
+}
+.pixel-clean{    
+  font-family: "Silkscreen", sans-serif;
+
+}
+.pixel-clean-vermelho{    
+  font-family: "Silkscreen", sans-serif;
+  color:  #dd7c7c;;
+
+
+}
+.pixelnav{
+    font-family: "Press Start 2P", cursive;
+     color: #79a7c8 !important;
+}
+.font2 {
+    font-family: 'Roboto Mono', monospace;
+}
+/* =============================
+    SEÇÃO SOBRE
+============================= */
+/* =============================
+    SEÇÃO SOBRE SIMPLIFICADA
+============================= */
+.sobre {
+    background-color: #87CEFA; 
+   margin: 5% 5%; 
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.sobre h1 {
+    font-family: "Press Start 2P", cursive;
+    color: #0e6fab;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre .figure-img {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+
+.sobre p {
+    font-family: "Silkscreen", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #0e6fab;
+    margin-bottom: 15px;
+}
+.sobre .font2 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.sobre .text-box {
+    background-color: #f0f9ff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.1);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .sobre {
+        padding: 20px 15px;
+    }
+
+    .sobre .figure-img {
+        max-height: 200px;
+    }
+}
+
