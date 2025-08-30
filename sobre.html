@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="assetss/favicon-32x32.png" type="image/x-icon">
 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+
+
+    
+
+
 
 </head>
 
@@ -20,11 +29,13 @@
       
 <nav class="navbar navbar-light bg-light py-2">
   <div class="container d-flex justify-content-between align-items-center">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
+    <a class="pixelnav navbar-brand d-flex align-items-center" href="index.html">
       <img src="assetss/logo.png" alt="Logo" style="height:40px; width:auto;">
+      Miau <br> Mória
     </a>
     <a href="sobre.html">
-      <button type="button" class="btn btn-primary btn-sm">
+      <button type="button" class="btn btn-primary btn-sm"  style="--bs-btn-padding-y: .28rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .78rem;">
+        
         Sobre
       </button>
     </a>
@@ -39,93 +50,83 @@
 
 
     <main id="conteudo-principal">
-        <section id="sobre" data-aos="fade-up" class="sobre">
-            <div class="container mt-4 ">
-                <div class="about-me text-center" data-aos="fade-down" data-aos-delay="200">
-                    <h1 class="titulo">
-                        Sobre
-                    </h1>
-                </div>
-                <div class="row align-items-center mt-3 mb-4">
-                    <div class="col md-6" data-aos="fade-right" data-aos-delay="300">
-                        <!--Componente FIGURE-->
-                        <figure class="figure">
-                            <img src="assetss/sobreimg.png" width="300" height="100"
-                                class="figure-img img-fluid rounded" alt="homem mostrando seu trabalho">
-                        </figure>
-                    </div>
-                    <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
-                        <p>
-                            O MiauMória é um passatempo divertido e educativo que testa a atenção e a memória dos
-                            jogadores.
-                            O objetivo é encontrar todos os pares de cartas iguais no menor número de movimentos
-                            possível.
-                        </p>
-                        <p>
-                            Você deve clicar nas cartas para virá-las e tentar lembrar onde cada imagem está. Se acertar
-                            o par,
-                            as cartas permanecem visíveis; se errar, elas voltam para o lado de trás. O jogo também
-                            conta os pontos
-                            realizados e permite reiniciar a qualquer momento para tentar melhorar sua pontuação.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="services" data-aos="fade-up">
-            <div class="container mt-5">
-                <div class="desenvolvedoras text-center">
-                    <h1 class="titulo" data-aos="flip-left" data-aos-delay="200">
-                        Sobre as Desenvolvedoras </h1>
+       <section id="sobre" data-aos="fade-up" class="sobre py-5">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-down" data-aos-delay="200">
+      <h1 class="pixel-blue">Sobre</h1>
+      <p class="lead">Aprenda e se divirta com o <strong>MiauMória!</strong></p>
+    </div>
+    <div class="row align-items-center g-4">
+      
+      <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
+        <figure class="figure text-center text-md-start">
+          <img src="assetss/sobreimg.png" class="figure-img img-fluid rounded shadow" alt="homem mostrando seu trabalho">
+        </figure>
+      </div>
 
-                    <div class="col-md-12" data-aos="fade-left" data-aos-delay="300">
-                        <p>
-                            Somos Aline Garcia e Paula Natali, estudantes do curso técnico em Informática na Escola
-                            Estadual
-                            de Educação Profissional Venceslau Vieira Batista. Atualmente, atuamos como estagiárias no
-                            IFCE,
-                            onde estamos adquirindo experiências práticas no ramo da tecnologia.
-                        </p>
-                        <p>
-                            Estamos iniciando nossa jornada no mundo da programação e, para fortalecer nossas
-                            habilidades,
-                            desenvolvemos o Jogo da Memória, utilizando HTML, CSS e JavaScript. Esse projeto foi pensado
-                            como
-                            uma forma de aplicar na prática os conhecimentos adquiridos em sala de aula e aprimorar
-                            nossa lógica
-                            de programação.
-                        </p>
-                        <p>
-                            Contamos com o apoio e os ensinamentos do nosso professor de Front-End, Wesnei, que tem nos
-                            guiado
-                            nesse processo de aprendizado.
-                        </p>
-                        <p>
-                            Nosso objetivo com este projeto é continuar evoluindo como desenvolvedoras, explorando novas
-                            ferramentas
-                            e linguagens, além de compartilhar conhecimento e experiências que possam inspirar outros
-                            iniciantes na
-                            área da programação.
-                        </p>
-                    </div>
+      <div class=" col-md-6" data-aos="fade-left" data-aos-delay="300">
+        <div class=" p-4 bg-light rounded shadow-sm "> 
+          <p class="font2"><strong>O MiauMória</strong> é um passatempo divertido e educativo que testa a atenção e a memória dos jogadores.</p>
+          <p class="font2">O objetivo é encontrar todos os pares de cartas iguais no menor número de movimentos possível.</p>
+          <p class="font2">Você deve clicar nas cartas para virá-las e tentar lembrar onde cada imagem está. Se acertar o par, elas permanecem visíveis; se errar, voltam para o lado de trás. O jogo também conta os pontos e permite reiniciar a qualquer momento para melhorar sua pontuação.</p>
+        </div>
+      </div>
 
+    </div>
+  </div>
+</section>
 
-                </div>
-            </div>
-            </div>
-            </div>
-        </section>
+        <section id="desenvolvedoras" class="py-5 bg-light">
+  <div class="container">
+    <h1 class="pixel-clean-vermelho text-center mb-5" data-aos="flip-left" data-aos-delay="200">
+      Desenvolvedoras
+    </h1>
+
+    <div class="row align-items-center text-center text-md-start">
+      
+      <!-- Texto Aline -->
+      <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-right" data-aos-delay="300">
+        <h3 class="pixel-clean-vermelho">Aline Garcia</h3>
+        <p class="font2">
+          Estudante do curso técnico em Informática na EEEP Venceslau Vieira Batista,
+          apaixonada por tecnologia e desenvolvimento Front-End. Atualmente atua como estagiária no IFCE,
+          buscando aprimorar habilidades em HTML, CSS, JavaScript e frameworks modernos.
+        </p>
+      </div>
+
+      <!-- Imagem Central -->
+      <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-delay="400">
+        <img src="assetss/desenvol.png" 
+             alt="Ilustração desenvolvedoras"
+             class="img-fluid rounded-circle shadow"
+             style="width: 220px; height: 220px; object-fit: cover;">
+      </div>
+
+      <!-- Texto Paula -->
+      <div class="col-md-4" data-aos="fade-left" data-aos-delay="300">
+        <h3 class="pixel-clean-vermelho">Paula Natali</h3>
+        <p class="font2">
+          Também estudante de Informática na EEEP Venceslau Vieira Batista, com interesse em programação e design.
+          Estagiária no IFCE, atua no desenvolvimento de projetos práticos em Front-End e sempre busca aprender
+          novas tecnologias para evoluir como desenvolvedora.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
         <section id="duvidas" class="container mt-5 mb-5" data-aos="fade-up">
-            <div class="manual text-center" data-aos="fade-down" data-aos-delay="200">
-                <h1 class="titulo">
+            <div class="manual text-center" data-aos="zoom-in" data-aos-delay="300">
+                <h1 class="pixel">
                     Manual do Jogador
                 </h1>
             </div>
             <!--Componente ACCRDION-->
             <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item" data-aos="fade-right" data-aos-delay="300">
-                    <h2 class="accordion-header" id="flush-headingOne">
+                <div class="accordion-item" data-aos="fade-right" data-aos-delay="400">
+                    <h2 class="pixel-clean accordion-header" id="flush-headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                             Como jogar?
@@ -133,7 +134,7 @@
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
+                        <div class="font2 accordion-body">
                             1. Clique em uma carta para virá-la. <br>
 
                             <div class="cartas-container" style="display: flex; gap: 10px; align-items: center;">
@@ -175,8 +176,8 @@
                     </div>
 
                 </div>
-                <div class="accordion-item" data-aos="fade-right" data-aos-delay="400">
-                    <h2 class="accordion-header" id="flush-headingTwo">
+                <div class="accordion-item" data-aos="fade-right" data-aos-delay="500">
+                    <h2 class="pixel-clean accordion-header" id="flush-headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                             Sobre a Pontuação
@@ -185,15 +186,15 @@
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <p> - Cada vez que você virar duas cartas, seu número de movimentos aumenta em 1.</p>
-                            <p> - O jogo conta quantos pares você conseguiu encontrar.</p>
-                            <p>- O objetivo é completar todos os pares com o menor número de movimentos possível.</p>
+                            <p class="font2"> - Cada vez que você virar duas cartas, seu número de movimentos aumenta em 1.</p>
+                            <p class="font2"> - O jogo conta quantos pares você conseguiu encontrar.</p>
+                            <p class="font2">- O objetivo é completar todos os pares com o menor número de movimentos possível.</p>
 
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item" data-aos="fade-right" data-aos-delay="500">
-                    <h2 class="accordion-header" id="flush-headingThree">
+                <div class="accordion-item" data-aos="fade-right" data-aos-delay="550">
+                    <h2 class="pixel-clean accordion-header" id="flush-headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseThree" aria-expanded="false"
                             aria-controls="flush-collapseThree">
@@ -203,8 +204,8 @@
                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                         aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <p> - Para reiniciar o jogo a qualquer momento, clique no botão “Reiniciar”.</p>
-                            <p>- Isso embaralhará todas as cartas e resetará a contagem de movimentos e pares.</p>
+                            <p class="font2"> - Para reiniciar o jogo a qualquer momento, clique no botão “Reiniciar”.</p>
+                            <p class="font2">- Isso embaralhará todas as cartas e resetará a contagem de movimentos e pares.</p>
                         </div>
                     </div>
                 </div>
@@ -219,23 +220,23 @@
                     <!-- SUGESTÕES -->
 <div class="container mt-5 mb-5 bg-light p-4 rounded shadow">
     <div class="row align-items-center">
-        <div class="col-md-6">
-            <h2 class="text-center">Sugestões</h2>
+        <div class="col-md-6"  data-aos="fade-right" data-aos-delay="200">
+            <h2 class=" pixel text-center">Sugestões</h2>
             <form id="formSugestao">
-                <input type="email" id="nome" class="form-control mb-2" placeholder="Seu email">
-                <textarea id="sugestao" class="form-control mb-2" placeholder="Escreva sua sugestão"></textarea>
-                <button type="submit" class="btn btn-primary"
+                <input type="email" id="nome" class=" font2 form-control mb-2" placeholder= "Seu email">
+                <textarea id="sugestao" class="font2 form-control mb-2" placeholder="Escreva sua sugestão"></textarea>
+                <button type="submit" class="font2 btn btn-primary"
                     style="--bs-btn-padding-y: .28rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .78rem;">
                     Enviar
                 </button>
             </form>
 
-            <h4 class="mt-4">Sugestões enviadas:</h4>
+            <h4 class="pixel-clean mt-4">Sugestões enviadas:</h4>
             <ul id="listaSugestoes" class="list-group"></ul>
         </div>
 
-        <!-- IMAGEM AO LADO DO FORM -->
-        <div class="col-md-6 text-center">
+        <!-- IMAGEM  -->
+        <div class="col-md-6 text-center" data-aos="fade-left" data-aos-delay="300">
             <img src="assetss/sugestao.png" width="250" height="250" alt="sugestão" class="img-fluid">
         </div>
     </div>
@@ -244,23 +245,23 @@
 
 <!-- CONTATO -->
 <section id="contatos" class="contatos py-5">
-  <div class="container">
-    <h2 class="text-center mb-5">Contatos</h2>
+  <div class="container" >
+    <h2 class=" pixel text-center mb-5" data-aos="fade-down" data-aos-delay="200">Contatos</h2>
     <div class="row align-items-center justify-content-center">
 
       <!-- Card 1 -->
       <div class="col-md-4">
         <div class="card text-center shadow rounded p-3">
           <img src="assetss/WhatsApp Image 2025-08-11 at 19.16.13 (1).jpeg" 
-               class="card-img-top rounded-circle mx-auto d-block" 
+               class="card-img-top rounded-circle mx-auto d-block"  data-aos="zoom-in" data-aos-delay="250"
                alt="Dev 1" 
                style="width: 150px; height: 150px; object-fit: cover;">
           <div class="card-body">
-            <h5 class="card-title">Aline Garcia</h5>
-            <p class="card-text">Desenvolvedora Front-end</p>
-            <a href="mailto:agm.linne@gmail.com" class="btn btn-outline-primary btn-sm">E-mail</a>
-            <a href="https://github.com/alinexjs" target="_blank" class="btn btn-outline-dark btn-sm">GitHub</a>
-            <a href="https://linkedin.com/in/seuuser" target="_blank" class="btn btn-outline-info btn-sm">LinkedIn</a>
+            <h5 class=" pixel card-title"">Aline Garcia</h5>
+            <p class="font2 card-text">Desenvolvedora Front-end</p>
+            <a href="mailto:agm.linne@gmail.com" class="pixel-clean btn2 btn-outline-dark btn-sm">E-mail</a>
+            <a href="https://github.com/alinexjs" target="_blank" class="pixel-clean btn2 btn-outline-dark btn-sm">GitHub</a>
+            <a href="https://linkedin.com/in/seuuser" target="_blank" class="pixel-clean btn2 btn-outline-dark btn-sm">LinkedIn</a>
           </div>
         </div>
       </div>
@@ -269,23 +270,23 @@
       <div class="col-md-2 text-center">
         <img src="assetss/Contato.png" 
              alt="Imagem central" 
-             class="img-fluid rounded-circle" 
-             style="width: 120px; height: 120px; object-fit: cover;">
+             class="img-fluid rounded" 
+             style="width: 329px; height: 329px; object-fit: cover;">
       </div>
 
       <!-- Card 2 -->
       <div class="col-md-4">
         <div class="card text-center shadow rounded p-3">
-          <img src="assets/dev2.jpg" 
-               class="card-img-top rounded-circle mx-auto d-block" 
+          <img src="assetss/paula.enc" 
+               class="card-img-top rounded-circle mx-auto d-block"  data-aos="zoom-in" data-aos-delay="250"
                alt="Dev 2" 
                style="width: 150px; height: 150px; object-fit: cover;">
           <div class="card-body">
-            <h5 class="card-title">Paula Natali</h5>
+            <h5 class=" pixel card-title">Paula Natali</h5>
             <p class="card-text">Desenvolvedora Front-end</p>
-            <a href="mailto:outradev@gmail.com" class="btn btn-outline-primary btn-sm">E-mail</a>
-            <a href="https://github.com/outrauser" target="_blank" class="btn btn-outline-dark btn-sm">GitHub</a>
-            <a href="https://linkedin.com/in/outrauser" target="_blank" class="btn btn-outline-info btn-sm">LinkedIn</a>
+            <a href="mailto:outradev@gmail.com" class="pixel-clean btn2 btn-outline-dark btn-sm">E-mail</a>
+            <a href="https://github.com/paulanatali" target="_blank" class="pixel-clean btn2 btn-outline-dark btn-sm">GitHub</a>
+            <a href="https://linkedin.com/in/outrauser" target="_blank" class="pixel-clean btn2 btn-outline-dark btn-sm">LinkedIn</a>
           </div>
         </div>
       </div>
