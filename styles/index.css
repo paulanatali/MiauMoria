@@ -106,3 +106,88 @@ footer {
     background: #20B2AA;
     border-radius: 6px;
 }
+
+/* JOGO DA MEMORIA  */
+
+/* Corpo do jogo */
+.corpo-jogo {
+  margin-left: 120px; /* empurra para não ficar atrás da sidebar */
+  padding: 20px;
+}
+
+/* Tabuleiro (grid de cartas) */
+.grid {
+  display: grid;
+  gap: 12px; /* espaço entre cartas */
+  grid-template-columns: repeat(4, 1fr); /* 4 cartas por linha */
+  margin-top: 20px;
+}
+
+/* Cada carta */
+.card {
+  perspective: 800px; /* necessário para o efeito 3D do flip */
+  height: 110px;
+  position: relative;
+}
+
+/* Inner - parte que gira */
+.inner {
+  position: absolute;
+  inset: 0; /* top, bottom, left, right = 0 */
+  border-radius: 10px;
+  transition: transform 0.45s; /* animação suave do flip */
+  transform-style: preserve-3d; /* mantém efeito 3D */
+  cursor: pointer; /* muda cursor ao passar o mouse */
+}
+
+/* Quando a carta está virada */
+.card.flipped .inner {
+  transform: rotateY(180deg);
+}
+
+/* Frente e verso da carta */
+.f ace {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden; /* esconde o verso quando girado */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* Frente da carta */
+.front {
+  transform: rotateY(180deg); /* começa virada para trás */
+}
+
+.front img {
+  width: 80%;   /* ocupa 80% da carta */
+  height: 80%;
+  object-fit: contain; /* mantém proporção da imagem */
+  border-radius: 10px;
+}
+
+/* Verso da carta (padrão) */
+.back {
+  background-image: url('/assetss/ponto_interrogação.png'); /* imagem de fundo do verso */
+  background-size: cover;
+  background-position: center;
+  border: 2px solid rgba(255,255,255,0.3);
+}
+
+/* Responsivo para telas pequenas */
+@media (max-width:520px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 cartas por linha */
+  }
+
+  .card {
+    height: 90px;
+  }
+
+  .front img {
+    width: 70%;
+    height: 70%;
+  }
+}
