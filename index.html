@@ -8,43 +8,103 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/index.css">
 
-  <title>MiauMória</title>gbnzdgntgrn
+  <title>MiauMória</title>
 </head>
 
 <body>
-  <!--navbar topo-->
-  <header class="topbar">
-    <nav class="navbar navbar-light bg-light">
+  <header>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-light ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="..." alt="" width="30" height="24" class="d-inline-block align-text-top">
-          MiauMória
+        <a class="navbar-brand" href="index.html">
+          <img src="assetss/logo.png" alt="" width="40" height="34" class="d-inline-block align-text-top">
+          <span class="logos"> <strong>MiauMória</strong></span>
         </a>
-        <button class="btn btn-dark" type="submit">Sobre</button>
+        <a href="sobre.html">
+          <button type="button" class="btn btn-primary"
+            style="--bs-btn-padding-y: .28rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .78rem;">
+            Sobre
+          </button>
+        </a>
       </div>
     </nav>
   </header>
+  <!--END NAVBAR-->
+
   <!--layout principal-->
   <div class="layout">
-    <!--navbar lateral-->
+    <!--SIDEBAR-->
     <aside class="sidebar">
-      <button>Botão 1</button>
-      <button>Botão 2</button>
+      <!--Button reiniciar-->
+      <ul>
+        <li><button id="reiniciar" class="btn"
+            style="--bs-btn-padding-y: .28rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .78rem;"><img
+              src="/assetss/reiniciar_azul.png" alt="Reiniciar"></button></li>
+      </ul>
+      <!--Button avaliar-->
+      <ul>
+        <li><button id="avaliar" class="btn"
+            style="--bs-btn-padding-y: .28rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .78rem;"><img
+              src="/assetss/estrela_ava.png" alt="Avaliar"></button></li>
+      </ul>
     </aside>
+    <!--END SIDEBAR-->
 
-    <main class="jogo">
+    <!--JOGO-->
+    <main class="corpo-jogo">
       <div class="container">
+        <h2>MiauMória</h2>
 
-        <h1>MiauMória</h1>
+        <!-- Estatísticas do jogo -->
+        <div class="stats">
+          Movimentos: <span id="moves">0</span> • Pares: <span id="pairs">0</span>/8
+        </div>
 
+        <!-- Tabuleiro -->
+        <div id="board" class="grid"></div>
 
       </div>
     </main>
+    <!--END JOGO-->
   </div>
+
+  <!-- Modal Avaliação -->
+  <div class="modal fade" id="avaliarModal" tabindex="-1" aria-labelledby="avaliarModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="avaliarModalLabel">Avalie nosso jogo!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <!-- Estrelas -->
+          <span style="font-size: 2rem; cursor: pointer;">⭐ ⭐ ⭐ ⭐ ⭐</span>
+        </div>
+        <!-- Botão Enviar -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+            style="--bs-btn-padding-y: .28rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .78rem;">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light text-center text-lg-start">
+    <div class="text-center p-3" style="background-color: #F08080;">
+      © 2025 MiauMória:
+      <a class="text-light" href="https://github.com/paulanatali/MiauMoria.git" target="_blank">Aline & Paula</a>
+    </div>
+  </footer>
+
+
+
   <script src="scripts/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 
 </body>
 

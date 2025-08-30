@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    top: 61px;
+    /* começa logo abaixo da navbar */
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    background: #20B2AA;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-right: 2px #ccc;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* coloca os itens em coluna */
+    justify-content: flex-end;
+    /* centraliza no final */
+}
+
+.sidebar button {
+    background: none;
+    /* sem cor de fundo */
+    border: none;
+    /* sem borda */
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar button img {
+    width: 40px;
+    height: 40px;
+}
+
+
+.btn {
+    background-color: #20B2AA;
+    color: #fefefe;
+    font-family: cursive;
+}
+
+.accordion-button {
+    font-weight: bold;
+}
+
+.text-light {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #87CEFA;
+}
+
+.logos {
+    font-family: cursive;
+    color: #fefefe;
+}
+
+main {
+    font-family: cursive;
+}
+
+/* Conteúdo principal "empurrado" para a direita */
+.corpo-jogo {
+    margin-left: 120px;
+    /* mesma largura da sidebar + espaçamento */
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    margin-left: 170px;
+    /* também respeita a sidebar */
+}
+
+.sidebar ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar li {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.sidebar a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.sidebar button:hover,
+.sidebar a:hover {
+    background: #20B2AA;
+    border-radius: 6px;
+}
