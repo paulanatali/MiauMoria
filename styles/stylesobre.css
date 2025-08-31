@@ -1,53 +1,45 @@
+/* Estilo básico do body */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;;
-    
+    margin: 0; /* remove margem padrão */
+    padding: 0; /* remove espaçamento interno padrão */
+    font-family: "Montserrat", sans-serif; /* fonte principal da página */
 }
 
-.nav-item {
-    margin: 0 15px;
-}
-
-.carousel-item img {
-    height: 500px;
-    object-fit: cover;
-}
-
+/* Botões do Accordion em negrito */
 .accordion-button {
     font-weight: bold;
 }
 
+/* Links com classe text-light sem sublinhado */
 .text-light {
     text-decoration: none;
 }
 
+/* Cartões (cards) */
 .card {
-    border-radius: 12px;
-    border: none;
+    border-radius: 12px; /* cantos arredondados */
+    border: none; /* sem borda */
 }
 
-.desenvolvedoras {
-    font-family: cursive;
-}
-
+/* Cartas do jogo */
 .cartas {
-    width: 100px;
-    height: 100px;
-    background-color: #20B2AA;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    margin: 10px;
-    cursor: pointer;
+    width: 100px; /* largura da carta */
+    height: 100px; /* altura da carta */
+    background-color: #20B2AA; /* cor de fundo */
+    border-radius: 10px; /* cantos arredondados */
+    display: flex; /* flexbox para centralizar conteúdo */
+    align-items: center; /* centraliza verticalmente */
+    justify-content: center; /* centraliza horizontalmente */
+    font-size: 40px; /* tamanho do número ou símbolo */
+    margin: 10px; /* espaço ao redor da carta */
+    cursor: pointer; /* cursor de clique */
 }
 
+/* Carta virada (lado oposto) */
 .carta-virada {
     width: 100px;
     height: 100px;
-    background-color: #fefefe;
+    background-color: #fefefe; /* cor clara */
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -57,107 +49,135 @@ body {
     cursor: pointer;
 }
 
+/* Bordas genéricas arredondadas */
 .border {
     border-radius: 7%;
 }
 
-
+/* Botões principais */
 .btn{
-    background-color:  #20B2AA;
-    color: #fefefe;
-    font-family: 'Roboto Mono', monospace;
-    border: none;
-    border-radius: 50px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    
-}
-.navbar{
-    background-color: #87CEFA;
+    background-color:  #20B2AA; /* cor de fundo */
+    color: #fefefe; /* cor do texto */
+    font-family: 'Roboto Mono', monospace; /* fonte */
+    border: none; /* sem borda */
+    border-radius: 50px; /* cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* sombra leve */
 }
 
+/* Navbar fixa */
+.navbar {
+    position: fixed; /* fixa no topo */
+    top: 0;
+    left: 0;
+    width: 100%; /* ocupa toda a largura */
+    background: #fff; /* cor de fundo branca */
+    display: flex; /* flexbox para alinhar conteúdo */
+    align-items: center; /* centraliza verticalmente */
+    justify-content: space-between; /* espaço entre elementos */
+    padding: 10px 20px; /* espaçamento interno */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* sombra leve */
+    z-index: 1000; /* fica acima do conteúdo */
+}
+
+/* Fonte do conteúdo principal */
 main{
     font-family: 'Roboto Mono', monospace;
 }
+
+/* Contato estilo */
 .contato{
-    
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-
 }
+
+/* Botão secundário */
 .btn2{
     background-color:  #c6ddef;
     color: #000000;
-  font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
 }
+
+/* Links gerais sem sublinhado */
 a {
   text-decoration: none;
 }
+
+/* Fontes especiais estilo pixel e clean */
 .pixel {
   font-family: "Press Start 2P", cursive;
 }
+
 .pixel-blue{
      font-family: "Press Start 2P", cursive;
-     color: #0e6fab;
+     color: #0e6fab; /* azul */
 }
+
+.escuro {
+    color:#0c5a8a; 
+}
+
 .pixel-clean{    
   font-family: "Silkscreen", sans-serif;
-
 }
+
 .pixel-clean-vermelho{    
   font-family: "Silkscreen", sans-serif;
-  color:  #dd7c7c;;
-
-
+  color:  #dd7c7c;
 }
+
 .pixelnav{
     font-family: "Press Start 2P", cursive;
-     color: #79a7c8 !important;
+    color: #79a7c8 !important;
 }
+
 .font2 {
     font-family: 'Roboto Mono', monospace;
 }
-/* =============================
-    SEÇÃO SOBRE
-============================= */
-/* =============================
-    SEÇÃO SOBRE SIMPLIFICADA
-============================= */
+
+/* Seção Sobre */
 .sobre {
-    background-color: #87CEFA; 
-   margin: 5% 5%; 
-    padding: 30px 20px;
+    background-color: #87CEFA; /* cor de fundo */
+    margin: 5% 5%; /* margem lateral */
+    padding: 30px 20px; /* espaçamento interno */
     border-radius: 10px;
+    margin-top: 10%; /* margem superior */
 }
 
+/* Título da seção Sobre */
 .sobre h1 {
-    font-family: "Press Start 2P", cursive;
-    color: #0e6fab;
+    font-family: "Press Start 2P", cursive; /* fonte pixel */
+    color: #0e6fab; /* cor azul */
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* espaço abaixo do título */
 }
 
+/* Imagem da seção Sobre */
 .sobre .figure-img {
     max-height: 400px;
     width: 100%;
-    object-fit: cover;
+    object-fit: cover; /* ajusta imagem sem deformar */
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1); /* sombra leve */
+}
 
+/* Parágrafos da seção Sobre */
 .sobre p {
     font-family: "Silkscreen", sans-serif;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.5; /* espaçamento entre linhas */
     color: #0e6fab;
     margin-bottom: 15px;
 }
+
+/* Fonte secundária da seção Sobre */
 .sobre .font2 {
     font-family: 'Roboto Mono', monospace;
 }
 
-
+/* Caixa de texto destacada */
 .sobre .text-box {
     background-color: #f0f9ff;
     padding: 15px;
@@ -165,14 +185,14 @@ a {
     box-shadow: 0 3px 7px rgba(0,0,0,0.1);
 }
 
-/* RESPONSIVO */
+/* Responsividade */
 @media (max-width: 768px) {
     .sobre {
-        padding: 20px 15px;
+        padding: 20px 15px; /* menos padding em telas pequenas */
     }
 
     .sobre .figure-img {
-        max-height: 200px;
+        max-height: 200px; /* reduz altura da imagem */
     }
+    
 }
-

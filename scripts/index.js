@@ -161,3 +161,23 @@ botaoReiniciar.addEventListener('click', startGame);
 
 // Inicia o jogo quando a página carrega
 startGame();
+
+//Música
+const audio = document.getElementById("musica");//add id musica
+const btnSom = document.getElementById("som");//add id som
+const iconSom = document.getElementById("iconSom");// add id img som
+
+audio.volume = 0.2; // volume baixo
+
+
+// Só começa a tocar quando clicar no botão
+btnSom.addEventListener("click", () => { //evento tocar
+  if (audio.paused) {
+    audio.play();
+    iconSom.src = "assetss/play.png"; //img
+  } else {
+    audio.pause();
+    iconSom.src = "assetss/pause.png"; //img
+  }
+});
+
