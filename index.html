@@ -7,6 +7,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="shortcut icon" href="assetss/favicon-32x32.png" type="image/x-icon">
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 
   <title>MiauMória</title>
 </head>
@@ -14,24 +20,24 @@
 <body>
   <header>
     <!--NAVBAR-->
-    <nav class="navbar navbar-light ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="assetss/logo.png" alt="" width="40" height="34" class="d-inline-block align-text-top">
-          <span class="logos"> <strong>MiauMória</strong></span>
+    <nav class="navbar navbar-light bg-light py-2">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="pixelnav navbar-brand d-flex align-items-center" href="index.html">
+          <img src="assetss/logo.png" alt="Logo" style="height:40px; width:auto;">
+          Miau <br> Mória
         </a>
         <a href="sobre.html">
-          <button type="button" class="btn btn-primary"
+          <button type="button" class="btn btn-primary btn-sm"
             style="--bs-btn-padding-y: .28rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .78rem;">
+
             Sobre
           </button>
         </a>
       </div>
     </nav>
-  </header>
+  </header><br>
   <!--END NAVBAR-->
 
-  <!--layout principal-->
   <div class="layout">
     <!--SIDEBAR-->
     <aside class="sidebar">
@@ -53,16 +59,16 @@
     <!--JOGO-->
     <main class="corpo-jogo">
       <div class="container">
-        <h2>MiauMória</h2>
+        <div class="back-card">
+          <h2>MiauMória</h2>
+          <!-- Estatísticas do jogo -->
+          <div class="stats">
+            Movimentos: <span id="movimentos">0</span> • Pares: <span id="pares">0</span>/8
+          </div>
 
-        <!-- Estatísticas do jogo -->
-        <div class="stats"> 
-          Movimentos: <span id="movimentos">0</span> • Pares: <span id="pares">0</span>/8
+          <!-- Tabuleiro -->
+          <div id="tabuleiro" class="grid"></div>
         </div>
-
-        <!-- Tabuleiro -->
-        <div id="tabuleiro" class="grid"></div>
-
       </div>
     </main>
     <!--END JOGO-->

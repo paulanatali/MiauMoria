@@ -1,10 +1,40 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
+/* NAVBAR */
+.navbar {
+   position: fixed;   /* sempre no topo */
+    top: 0;
+    left: 0;
+    width: 100%;       /* ocupa toda a largura da tela */
+    background: #fff;  /* define uma cor de fundo para não ficar transparente */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* logo à esquerda, botão Sobre à direita */
+    padding: 10px 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* leve sombra para destacar */
+    z-index: 1000;     /* fica por cima do conteúdo */
+
+}
+
+.pixelnav {
+    font-family: "Press Start 2P", cursive;
+    color: #79a7c8 !important;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+    color: #0e6fab;
+}
+
+/* SIDEBAR */
 .sidebar {
     position: fixed;
-    top: 61px;
+    top: 86px;
     /* começa logo abaixo da navbar */
     left: 0;
     bottom: 0;
@@ -21,65 +51,6 @@ body {
     /* coloca os itens em coluna */
     justify-content: flex-end;
     /* centraliza no final */
-}
-
-.sidebar button {
-    background: none;
-    /* sem cor de fundo */
-    border: none;
-    /* sem borda */
-    cursor: pointer;
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.sidebar button img {
-    width: 40px;
-    height: 40px;
-}
-
-
-.btn {
-    background-color: #20B2AA;
-    color: #fefefe;
-    font-family: cursive;
-}
-
-.accordion-button {
-    font-weight: bold;
-}
-
-.text-light {
-    text-decoration: none;
-}
-
-.navbar {
-    background-color: #87CEFA;
-}
-
-.logos {
-    font-family: cursive;
-    color: #fefefe;
-}
-
-main {
-    font-family: cursive;
-}
-
-/* Conteúdo principal "empurrado" para a direita */
-.corpo-jogo {
-    margin-left: 120px;
-    /* mesma largura da sidebar + espaçamento */
-    padding: 20px;
-}
-
-/* Footer */
-footer {
-    margin-left: 170px;
-    /* também respeita a sidebar */
 }
 
 .sidebar ul {
@@ -107,87 +78,183 @@ footer {
     border-radius: 6px;
 }
 
-/* JOGO DA MEMORIA  */
+.sidebar .button {
+    background: none;
+    /* sem cor de fundo */
+    border: none;
+    /* sem borda */
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-/* Corpo do jogo */
+.sidebar button img {
+    width: 40px;
+    height: 40px;
+}
+
+
+.btn {
+    background-color: #20B2AA;
+    color: #fefefe;
+    font-family: 'Roboto Mono', monospace;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+main {
+    font-family: 'Roboto Mono', monospace;
+}
+
 .corpo-jogo {
-  margin-left: 120px; /* empurra para não ficar atrás da sidebar */
-  padding: 20px;
+    margin-left: 120px;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+.back-card {
+    background-color: #87CEFA;
+    padding: 20px 20px 60px;
+    border-radius: 10px;
+}
+
+/*   JOGO DA MEMORIA   */
+
+.stats {
+    text-align: right;
 }
 
 /* Tabuleiro (grid de cartas) */
 .grid {
-  display: grid;
-  gap: 12px; /* espaço entre cartas */
-  grid-template-columns: repeat(4, 1fr); /* 4 cartas por linha */
-  margin-top: 20px;
+    display: grid;
+    gap: 20px;
+    /* espaço entre cartas */
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 cartas por linha */
+    margin-top: 20px;
+    max-width: 800px; /* limita largura do tabuleiro */
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
 }
 
 /* Cada carta */
 .card {
-  perspective: 800px; /* necessário para o efeito 3D do flip */
-  height: 110px;
-  position: relative;
+    border-radius: 10px;
+    perspective: 800px;
+    /* necessário para o efeito 3D do flip */
+    height: 120px;
+    width: 120px;
+    position: relative;
 }
 
 /* Inner - parte que gira */
 .inner {
-  position: absolute;
-  inset: 0; /* top, bottom, left, right = 0 */
-  border-radius: 10px;
-  transition: transform 0.45s; /* animação suave do flip */
-  transform-style: preserve-3d; /* mantém efeito 3D */
-  cursor: pointer; /* muda cursor ao passar o mouse */
+    position: absolute;
+    inset: 0;
+    /* top, bottom, left, right = 0 */
+    border-radius: 10px;
+    transition: transform 0.45s;
+    /* animação suave do flip */
+    transform-style: preserve-3d;
+    /* mantém efeito 3D */
+    cursor: pointer;
+    /* muda cursor ao passar o mouse */
 }
 
 /* Quando a carta está virada */
 .card.flipped .inner {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 /* Frente e verso da carta */
-.f ace {
-  position: absolute;
-  inset: 0;
-  backface-visibility: hidden; /* esconde o verso quando girado */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
+.face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    /* esconde o verso quando girado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
 
 /* Frente da carta */
 .front {
-  transform: rotateY(180deg); /* começa virada para trás */
+    background-color: #20B2AA;
+    transform: rotateY(180deg);
+    /* começa virada para trás */
 }
 
 .front img {
-  width: 80%;   /* ocupa 80% da carta */
-  height: 80%;
-  object-fit: contain; /* mantém proporção da imagem */
-  border-radius: 10px;
+    width: 80%;
+    /* ocupa 80% da carta */
+    height: 80%;
+    object-fit: contain;
+    /* mantém proporção da imagem */
+    border-radius: 10px;
 }
 
 /* Verso da carta (padrão) */
 .back {
-  background-image: url('/assetss/ponto_interrogação.png'); /* imagem de fundo do verso */
-  background-size: cover;
-  background-position: center;
-  border: 2px solid rgba(255,255,255,0.3);
+    background-image: url('/assetss/ponto_interrogação.png');
+    /* imagem de fundo do verso */
+    background-size: cover;
+    background-position: center;
 }
 
-/* Responsivo para telas pequenas */
-@media (max-width:520px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 cartas por linha */
-  }
+/*   FOOTER   */
+footer {
+    margin-left: 100px;
+}
 
-  .card {
-    height: 90px;
-  }
+.text-light {
+    text-decoration: none;
+}
+/* Quando a tela for menor que 992px (tablet) → 3 colunas */
+@media (max-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* Quando a tela for menor que 600px (celular) → 2 colunas */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-  .front img {
-    width: 70%;
-    height: 70%;
-  }
+    /* Ajuste do tamanho dos cards no mobile */
+    .card {
+        width: 100px;
+        height: 100px;
+    }
+
+    .front img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .corpo-jogo {
+        margin-left: 70px; 
+        padding-top: 80px;
+    }
+
+    .sidebar {
+        width: 80px; 
+        padding: 10px;
+    }
+
+
+    footer {
+        margin-left: 70px;
+    }
 }
