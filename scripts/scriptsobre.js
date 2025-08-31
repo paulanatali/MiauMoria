@@ -1,21 +1,39 @@
- AOS.init({
-    duration:1000,
-    once:true,
+// Inicializa o AOS (Animate On Scroll) para animações de rolagem
+AOS.init({
+    duration: 1000, // duração da animação em milissegundos (1s)
+    once: true,     // animação acontece apenas uma vez ao aparecer na tela
 });
- const form = document.getElementById("formSugestao");
-                const lista = document.getElementById("listaSugestoes");
 
-                form.addEventListener("submit", function (e) {
-                    e.preventDefault();
-                    const nome = document.getElementById("nome").value;
-                    const sugestao = document.getElementById("sugestao").value;
+// Seleciona o formulário de sugestões pelo id
+const form = document.getElementById("formSugestao");
 
-                    if (nome && sugestao) {
-                        const li = document.createElement("li");
-                        li.className = "list-group-item";
-                        li.textContent = `${nome}: ${sugestao}`;
-                        lista.appendChild(li);
-                        form.reset();
-                    }
-                });
+// Seleciona a lista onde as sugestões serão adicionadas
+const lista = document.getElementById("listaSugestoes");
+
+// Adiciona um "ouvinte" para quando o formulário for enviado
+form.addEventListener("submit", function (e) {
+    e.preventDefault(); // previne o comportamento padrão do formulário (não recarrega a página)
+
+    // Pega os valores digitados nos campos "nome" e "sugestao"
+    const nome = document.getElementById("nome").value;
+    const sugestao = document.getElementById("sugestao").value;
+
+    // Verifica se os dois campos têm algum valor
+    if (nome && sugestao) {
+        // Cria um novo item de lista (<li>)
+        const li = document.createElement("li");
+
+        // Adiciona a classe do Bootstrap para estilização de lista
+        li.className = "list-group-item";
+
+        // Define o conteúdo do item como "nome: sugestão"
+        li.textContent = `${nome}: ${sugestao}`;
+
+        // Adiciona o item à lista existente
+        lista.appendChild(li);
+
+        // Limpa os campos do formulário após enviar
+        form.reset();
+    }
+});
 
