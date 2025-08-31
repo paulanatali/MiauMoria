@@ -132,7 +132,7 @@ function verificarPar() {
 
         // Se todos os pares encontrados, alerta vitória
         if (paresEncontrados === imagens.length) {
-            setTimeout(() => alert(`Parabéns! Você encontrou todos os pares em ${movimentos} movimentos.`), 200);
+            setTimeout(() => alert(`Parabéns! Você encontrou todos os pares em ${movimentos} movimentos.\nClique no botão ao lado para reiniciar o jogo :)`), 200);
         }
         return;
     }
