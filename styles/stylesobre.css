@@ -155,10 +155,6 @@ a {
 }
 
 /* Imagem da seção Sobre */
-.sobre .figure {
-  display: flex;
-  justify-content: center; /* centraliza no mobile */
-}
 
 .sobre .figure-img {
   max-height: 400px; /* um pouco menor para equilibrar */
