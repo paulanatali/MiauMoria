@@ -103,21 +103,13 @@ h2 {
 }
 
 
-.btn {
-    background-color: #20B2AA;
-    color: #fefefe;
-    font-family: 'Roboto Mono', monospace;
-    border: none;
-    border-radius: 50px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn-custom {
-    padding: .5rem 1rem;
-    /* altura e largura internas */
-    font-size: 1.rem;
-    min-width: 80px;
-    /* largura mínima */
+.btn{
+    background-color:  #20B2AA; /* cor de fundo */
+    color: #fefefe; /* cor do texto */
+    font-family: 'Roboto Mono', monospace; /* fonte */
+    border: none; /* sem borda */
+    border-radius: 50px; /* cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* sombra leve */
 }
 
 main {

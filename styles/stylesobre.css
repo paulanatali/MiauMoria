@@ -155,12 +155,18 @@ a {
 }
 
 /* Imagem da seção Sobre */
+.sobre .figure {
+  display: flex;
+  justify-content: center; /* centraliza no mobile */
+}
+
 .sobre .figure-img {
-    max-height: 400px;
-    width: 100%;
-    object-fit: cover; /* ajusta imagem sem deformar */
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1); /* sombra leve */
+  max-height: 400px; /* um pouco menor para equilibrar */
+  width: 100%;
+  max-width: 450px; /* limita a largura para não esticar demais */
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 
 /* Parágrafos da seção Sobre */
@@ -190,9 +196,8 @@ a {
     .sobre {
         padding: 20px 15px; /* menos padding em telas pequenas */
     }
-
+    
     .sobre .figure-img {
         max-height: 200px; /* reduz altura da imagem */
     }
-    
 }
