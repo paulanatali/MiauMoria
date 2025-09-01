@@ -17,29 +17,29 @@ body {
 
 /* Cartões (cards) */
 .card {
-    border-radius: 12px; /* cantos arredondados */
-    border: none; /* sem borda */
+    border-radius: 12px; 
+    border: none; 
 }
 
 /* Cartas do jogo */
 .cartas {
-    width: 100px; /* largura da carta */
-    height: 100px; /* altura da carta */
-    background-color: #20B2AA; /* cor de fundo */
-    border-radius: 10px; /* cantos arredondados */
+    width: 100px; 
+    height: 100px; 
+    background-color: #20B2AA; 
+    border-radius: 10px; 
     display: flex; /* flexbox para centralizar conteúdo */
-    align-items: center; /* centraliza verticalmente */
+    align-items: center; 
     justify-content: center; /* centraliza horizontalmente */
-    font-size: 40px; /* tamanho do número ou símbolo */
-    margin: 10px; /* espaço ao redor da carta */
+    font-size: 40px; 
+    margin: 10px; 
     cursor: pointer; /* cursor de clique */
 }
 
-/* Carta virada (lado oposto) */
+/* Carta virada */
 .carta-virada {
     width: 100px;
     height: 100px;
-    background-color: #fefefe; /* cor clara */
+    background-color: #fefefe; 
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -56,11 +56,11 @@ body {
 
 /* Botões principais */
 .btn{
-    background-color:  #20B2AA; /* cor de fundo */
-    color: #fefefe; /* cor do texto */
-    font-family: 'Roboto Mono', monospace; /* fonte */
+    background-color:  #20B2AA; 
+    color: #fefefe;
+    font-family: 'Roboto Mono', monospace; 
     border: none; /* sem borda */
-    border-radius: 50px; /* cantos arredondados */
+    border-radius: 50px; 
     box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* sombra leve */
 }
 
@@ -69,12 +69,12 @@ body {
     position: fixed; /* fixa no topo */
     top: 0;
     left: 0;
-    width: 100%; /* ocupa toda a largura */
-    background: #fff; /* cor de fundo branca */
+    width: 100%; 
+    background: #fff;
     display: flex; /* flexbox para alinhar conteúdo */
-    align-items: center; /* centraliza verticalmente */
+    align-items: center; 
     justify-content: space-between; /* espaço entre elementos */
-    padding: 10px 20px; /* espaçamento interno */
+    padding: 10px 20px; 
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* sombra leve */
     z-index: 1000; /* fica acima do conteúdo */
 }
@@ -105,14 +105,14 @@ a {
   text-decoration: none;
 }
 
-/* Fontes especiais estilo pixel e clean */
+/* Fontes especiais estilo pixel, clean, blue e vermelho */
 .pixel {
   font-family: "Press Start 2P", cursive;
 }
 
 .pixel-blue{
      font-family: "Press Start 2P", cursive;
-     color: #0e6fab; /* azul */
+     color: #0e6fab; 
 }
 
 .escuro {
@@ -130,7 +130,7 @@ a {
 
 .pixelnav{
     font-family: "Press Start 2P", cursive;
-    color: #79a7c8 !important;
+    color: #79a7c8 !important; /* o important prioriza este elemnto acima de qualquer outro*/
 }
 
 .font2 {
@@ -139,25 +139,25 @@ a {
 
 /* Seção Sobre */
 .sobre {
-    background-color: #87CEFA; /* cor de fundo */
-    margin: 5% 5%; /* margem lateral */
-    padding: 30px 20px; /* espaçamento interno */
+    background-color: #87CEFA; 
+    margin: 5% 5%; 
+    padding: 30px 20px; 
     border-radius: 10px;
-    margin-top: 10%; /* margem superior */
+    margin-top: 10%; 
 }
 
 /* Título da seção Sobre */
 .sobre h1 {
-    font-family: "Press Start 2P", cursive; /* fonte pixel */
-    color: #0e6fab; /* cor azul */
+    font-family: "Press Start 2P", cursive; 
+    color: #0e6fab; 
     text-align: center;
-    margin-bottom: 20px; /* espaço abaixo do título */
+    margin-bottom: 20px; 
 }
 
 /* Imagem da seção Sobre */
 
 .sobre .figure-img {
-  max-height: 400px; /* um pouco menor para equilibrar */
+  max-height: 400px; 
   width: 100%;
   max-width: 450px; /* limita a largura para não esticar demais */
   object-fit: contain;

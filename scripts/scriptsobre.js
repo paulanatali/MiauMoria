@@ -1,7 +1,7 @@
-// Inicializa o AOS (Animate On Scroll) para animações de rolagem
+// Inicializa o AOS para animações de rolagem
 AOS.init({
-    duration: 1000, // duração da animação em milissegundos (1s)
-    once: true,     // animação acontece apenas uma vez ao aparecer na tela
+    duration: 1000, // duração da animação
+    once: true,     // animação acontece apenas uma vez
 });
 
 // Seleciona o formulário de sugestões pelo id
@@ -12,7 +12,7 @@ const lista = document.getElementById("listaSugestoes");
 
 // Adiciona um "ouvinte" para quando o formulário for enviado
 form.addEventListener("submit", function (e) {
-    e.preventDefault(); // previne o comportamento padrão do formulário (não recarrega a página)
+    e.preventDefault(); // não recarrega a página
 
     // Pega os valores digitados nos campos "nome" e "sugestao"
     const nome = document.getElementById("nome").value;
