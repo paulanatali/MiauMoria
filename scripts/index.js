@@ -1,19 +1,14 @@
-// BUTTON RESET
-document.getElementById("reiniciar").addEventListener("click", reiniciarJogo);
-
-function reiniciarJogo() {
-    // por enquanto só recarrega a página
-    location.reload();
-
-}
-
 // BUTTON AVALIAR
-document.addEventListener("DOMContentLoaded", () => {
-    const avaliarBtn = document.getElementById("avaliar");
-    const avaliarModal = new bootstrap.Modal(document.getElementById('avaliarModal'));
 
+//Espera o html carregar totalmente
+document.addEventListener("DOMContentLoaded", () => {
+    //Pega o botão avaliar
+    const avaliarBtn = document.getElementById("avaliar");
+    //Pega o modal do bootstrap
+    const avaliarModal = new bootstrap.Modal(document.getElementById('avaliarModal'));
+    //Quando clicar no botão abre o modal
     avaliarBtn.addEventListener("click", () => {
-        avaliarModal.show(); // abre o modal
+        avaliarModal.show(); 
     });
 });
 
@@ -39,8 +34,10 @@ let trava = false;          // trava temporária para evitar cliques rápidos
 let movimentos = 0;         // contagem de movimentos
 let paresEncontrados = 0;   // número de pares encontrados
 
+// Elementos da tela (DOM)
+// Ligações com o HTML para mostrar estatísticas e montar as cartas
 const tabuleiro = document.getElementById('tabuleiro');
-const spanMovimentos = document.getElementById('movimentos');  // estatísticas na tela
+const spanMovimentos = document.getElementById('movimentos');
 const spanPares = document.getElementById('pares');
 const botaoReiniciar = document.getElementById('reiniciar');
 
@@ -75,17 +72,17 @@ function startGame() {
         const img = document.createElement('img');
         img.src = imgSrc;
         img.alt = "Carta";
-        frente.appendChild(img);
+        frente.appendChild(img);  // coloca a 'img' dentro da 'frente'
 
         // Verso da carta
         const verso = document.createElement('div');
         verso.className = 'face back';
 
         // Monta a carta
-        inner.appendChild(frente);
-        inner.appendChild(verso);
-        carta.appendChild(inner);
-        tabuleiro.appendChild(carta);
+        inner.appendChild(frente);  // coloca a 'frente' dentro do 'inner'
+        inner.appendChild(verso);   // coloca o 'verso' dentro do 'inner'
+        carta.appendChild(inner);   // coloca o 'inner' dentro da 'carta'
+        tabuleiro.appendChild(carta); // coloca a 'carta' dentro do 'tabuleiro'
 
         // Evento de clique na carta
         carta.addEventListener('click', onCardClick);
@@ -110,14 +107,14 @@ function onCardClick(e) {
 
     // Segunda carta clicada
     segundaCarta = carta;
-    movimentos++;                  // incrementa movimentos
+    movimentos++;                  // Aumenta no contador de movimentos
     spanMovimentos.textContent = movimentos;
 
     // Verifica se formam par
     verificarPar();
 }
 
-// Verifica se as duas cartas viradas formam um par
+// Função para verificar se as duas cartas viradas formam um par
 function verificarPar() {
     if (primeiraCarta.dataset.valor === segundaCarta.dataset.valor) {
         // Encontrou par
@@ -132,7 +129,7 @@ function verificarPar() {
 
         // Se todos os pares encontrados, alerta vitória
         if (paresEncontrados === imagens.length) {
-            setTimeout(() => alert(`Parabéns! Você encontrou todos os pares em ${movimentos} movimentos.\nClique no botão ao lado para reiniciar o jogo :)`), 200);
+            setTimeout(() => alert(`Parabéns! Você encontrou todos os pares em ${movimentos} movimentos.\nClique no botão 🔄 para jogar novamente :)`), 200);
         }
         return;
     }
